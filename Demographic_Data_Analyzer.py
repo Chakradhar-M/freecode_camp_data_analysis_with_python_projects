@@ -46,7 +46,7 @@ def calculate_demographic_data(print_data=True):
 
     rich_min_hour_workers = min_hour_workers[min_hour_workers["salary"] == ">50K"]
 
-    rich_percentage = round((len(rich_min_hour_workers)/len(min_hour_workers))*100,4)
+    rich_percentage = round((len(rich_min_hour_workers)/len(min_hour_workers))*100,1)
    
     ###################################################################################################################
     # Total number of individuals from each country
