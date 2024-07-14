@@ -60,12 +60,13 @@ def draw_heat_map():
     # 14 Set up the matplotlib figure
     plt.figure(figsize=(10, 8))
     
-    # 15 Plot the heatmap with the mask and correct aspect ratio
+    # 15 Plot the heatmap 
     sns.heatmap(corr, mask=mask, annot=True, fmt='.1f', cmap='coolwarm', center=0, square=True, linewidths=.5)
     
     # 16
     fig = plt.gcf()
     fig.savefig('heatmap.png')
     return fig
+    
 
 
